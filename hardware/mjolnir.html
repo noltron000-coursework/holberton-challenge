@@ -31,43 +31,61 @@
 
 
 	<body>
+		<!--Facebook wanted me to put this here-->
+		<div id="fb-root"></div>
+		<script>
+			(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<!--Now starts the original stuff-->
 		<header>
+			<div class="right">
+				<a href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-screen-name="false" data-show-count="false">Follow @TwitterDev</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+			<div class="right">
+				<div class="fb-share-button" data-href="https://facebook.com/noltron000/" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ffacebook.com%2Fnoltron000%2F&amp;src=sdkpreparse">Share</a></div>
+			</div>
 			<div class="logo">
 				<img id="smart_thumbnail" src="images/holberton-biggie.png" class="small">
 			</div>
-			<a class="dropdown" target="_blank" href="http://213.167.242.216">
-				<li class="head-button">Home</li>
-			</a>
-			<a class="dropdown" target="_blank" href="http://213.167.242.216/tweets.html">
-				<li class="head-button">Tweets</li>
-			</a>
+			<ul class="dropdown" target="_blank">
+				<a  href="http://213.167.242.216"><li class="head-button">Home</li></a>
+			</ul>
+			<ul class="dropdown" target="_blank">
+				<a href="http://213.167.242.216/tweets.html"><li class="head-button">Tweets</li></a>
 			</ul>
 			<ul class="dropdown">
 				<li class="drop-button">Dungeons &amp; Dragons</li>
 				<ul class="drop-entity">
-					<li><a target="_blank" href="http://213.167.242.216/dnd/dice-roller.html">Dice Roller</a></li>
-					<li><a target="_blank" href="http://213.167.242.216/dnd/print-outs.html">Printout Mod</a></li>
+					<a target="_blank" href="http://213.167.242.216/dnd/dice-roller.html"><li>Dice Roller</li></a>
+					<a target="_blank" href="http://213.167.242.216/dnd/print-outs.html"><li>Printout Mod</li></a>
 				</ul>
 			</ul>
 			<ul class="dropdown">
 				<li class="drop-button">Team Fortress 2</li>
 				<ul class="drop-entity">
-					<li><a target="_blank" href="http://213.167.242.216/tf2/configs.html">Dense CFGs</a></li>
-					<li><a target="_blank" href="http://213.167.242.216/tf2/unusual.html">Unusual Mod</a></li>
+					<a target="_blank" href="http://213.167.242.216/tf2/configs.html"><li>Dense CFGs</li></a>
+					<a target="_blank" href="http://213.167.242.216/tf2/unusual.html"><li>Unusual Mod</li></a>
 				</ul>
 			</ul>
-			<a class="dropdown" target="_blank" href="http://213.167.242.216/challenges/vbox.html">
-				<li class="head-button">Velocibox</li>
-			</a>
-			<a class="dropdown" target="_blank" href="http://213.167.242.216/hardware/mjolnir.html">
-				<li class="head-button">Mjolnir</li>
-			</a>
+			<ul class="dropdown" target="_blank">
+				<a href="http://213.167.242.216/challenges/vbox.html"><li class="head-button">Velocibox</li></a>
+			</ul>
+			<ul class="dropdown" target="_blank">
+				<a href="http://213.167.242.216/hardware/mjolnir.html"><li class="head-button">Mjolnir</li></a>
+			</ul>
 			<ul class="dropdown">
 				<li class="drop-button">Professional</li>
 				<ul class="drop-entity">
-					<li><a target="_blank" href="https://noltron000.github.io/my-website/">My Website</a></li>
-					<li><a target="_blank" href="https://drive.google.com/open?id=11XxgrT062TGRMKD3ASSruP-9hqrYdI0i">Resume</a></li>
+					<a target="_blank" href="https://noltron000.github.io/my-website/"><li>My Website</li></a>
+					<a target="_blank" href="https://drive.google.com/open?id=11XxgrT062TGRMKD3ASSruP-9hqrYdI0i"><li>Resume</li></a>
 				</ul>
+			</ul>
 		</header>
 
 

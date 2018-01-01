@@ -143,7 +143,11 @@ header li a {
 	display: flex;
 	flex-direction: row;
 }
-
+header .right {
+	float: right;
+	margin: 0 10px 15px;
+	padding-top:20px;
+}
 
     /*══════════════════════════════════════════════*/
    /* OBJECTIVE: Overwrite existing holberton.css. */
