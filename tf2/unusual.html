@@ -30,16 +30,17 @@
 
 
 
+
 	<body>
 		<!--Facebook wanted me to put this here-->
 		<div id="fb-root"></div>
 		<script>
 			(function(d, s, id) {
-			  var js, fjs = d.getElementsByTagName(s)[0];
-			  if (d.getElementById(id)) return;
-			  js = d.createElement(s); js.id = id;
-			  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
-			  fjs.parentNode.insertBefore(js, fjs);
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+				fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));
 		</script>
 		<!--Now starts the original stuff-->
@@ -51,30 +52,26 @@
 			<div class="logo">
 				<img id="smart_thumbnail" src="../images/holberton-biggie.png" class="small">
 			</div>
-			<ul class="dropdown" target="_blank">
+			<ul class="dropdown">
 				<a  href="http://213.167.242.216"><li class="head-button">Home</li></a>
 			</ul>
-			<ul class="dropdown" target="_blank">
+			<ul class="dropdown">
 				<a href="http://213.167.242.216/tweets.html"><li class="head-button">Tweets</li></a>
 			</ul>
 			<ul class="dropdown">
-				<li class="drop-button">Dungeons &amp; Dragons</li>
-				<ul class="drop-entity">
-					<a target="_blank" href="http://213.167.242.216/dnd/dice-roller.html"><li>Dice Roller</li></a>
-					<a target="_blank" href="http://213.167.242.216/dnd/print-outs.html"><li>Printout Mod</li></a>
-				</ul>
+				<a href="http://213.167.242.216/dnd/print-outs.html"><li class="head-button">Dungeons &amp; Dragons</li></a>
 			</ul>
 			<ul class="dropdown">
 				<li class="drop-button">Team Fortress 2</li>
 				<ul class="drop-entity">
-					<a target="_blank" href="http://213.167.242.216/tf2/configs.html"><li>Dense CFGs</li></a>
-					<a target="_blank" href="http://213.167.242.216/tf2/unusual.html"><li>Unusual Mod</li></a>
+					<a href="http://213.167.242.216/tf2/configs.html"><li>Dense CFGs</li></a>
+					<a href="http://213.167.242.216/tf2/unusual.html"><li>Unusual Mod</li></a>
 				</ul>
 			</ul>
-			<ul class="dropdown" target="_blank">
+			<ul class="dropdown">
 				<a href="http://213.167.242.216/challenges/vbox.html"><li class="head-button">Velocibox</li></a>
 			</ul>
-			<ul class="dropdown" target="_blank">
+			<ul class="dropdown">
 				<a href="http://213.167.242.216/hardware/mjolnir.html"><li class="head-button">Mjolnir</li></a>
 			</ul>
 			<ul class="dropdown">
