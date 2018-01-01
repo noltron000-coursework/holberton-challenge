@@ -8,15 +8,15 @@
 		<link href="https://www.holbertonschool.com/level2/holberton.css" rel="stylesheet">
 		<link href="../styles.css" rel="stylesheet">
 		<script src="../behavior.js"></script>
-</head>
+	</head>
 
 
 
 
 	<body>
-				<header>
-			<div class="dropdown">
-				<img class="logo" src="images/holberton-biggie.png" width=30px>
+		<header>
+			<div class="logo">
+				<img src="../images/holberton-biggie.png" width=30px>
 			</div>
 			<a class="dropdown" target="_blank" href="http://213.167.242.216">
 				<li class="head-button">Home</li>
@@ -48,6 +48,9 @@
 			<a class="dropdown" target="_blank" href="http://213.167.242.216/challenges/vbox.html">
 				<li class="head-button">Velocibox</li>
 			</a>
+			<a class="dropdown" target="_blank" href="http://213.167.242.216/hardware/mjolnir.html">
+				<li class="head-button">Mjolnir</li>
+			</a>
 		</header>
 
 
@@ -70,6 +73,75 @@
 				<p>
 					Unfortunately, I lost my most complicated scripts when I upgraded my OS. Luckily I still have one that I can use as an example. Engineer is a class in TF2 that has special buildings which can complicate controls when in a firefight. I mapped the controls so that he can place his buildings just by holding a button and clicking, instead of going through menus. It makes my gameplay reactions more fluid, giving me a greater edge when I use him. Here's an example of the script:
 				</p>
+				<pre>
+exec autoexec
+echo "+-> Thanks for making the script Noltron..."
+echo "|"
+echo "+-> execing engineer.cfg..."
+
+bind mouse4 destroy_mouse_setup
+bind mouse5 build_mouse_setup
+bind mwheelup trigger_happy_s1
+bind mwheeldown trigger_happy_s2
+bind mouse3 trigger_happy_s3
+
+//special mouse builder/destroyer\\
+alias build_mouse_setup           "-attack;-attack2;slot4;
+                                  bind mouse1 build_sentry;
+                                  bind mouse2 build_dispenser;
+                                  bind mouse4 build_teleporter_exit; 
+                                  bind mouse5 build_teleporter_entrance"
+
+
+
+alias build_sentry                "build 2;revert"
+alias build_dispenser             "build 0;revert"
+alias build_teleporter_entrance   "build 1;revert"
+alias build_teleporter_exit       "build 3;revert"
+
+
+
+alias destroy_mouse_setup         "-attack;-attack2;slot5;
+                                  bind mouse1 destroy_sentry;
+                                  bind mouse2 destroy_dispenser;
+                                  bind mouse4 destroy_teleporter_exit;
+                                  bind mouse5 destroy_teleporter_entrance"
+
+
+
+alias destroy_sentry              "destroy 2;revert"
+alias destroy_dispenser           "destroy 0;revert"
+alias destroy_teleporter_entrance "destroy 1;revert"
+alias destroy_teleporter_exit     "destroy 3;revert"
+
+
+
+alias revert                      "bind mouse1 +attack;
+                                  bind mouse2 +attack2;
+                                  bind mouse4 destroy_mouse_setup;
+                                  bind mouse5 build_mouse_setup"
+
+
+
+alias trigger_happy_s1            "slot0;slot1;revert"
+alias trigger_happy_s2            "slot0;slot2;revert"
+alias trigger_happy_s3            "slot0;slot3;revert"
+
+echo "|"
+echo "+-> ...engineer.cfg complete!"
+//Last updated 7/15/2013 @ 5:50PM
+				</pre>
+				<p>
+					And yes this was last updated 4 and a half years ago. I've updated it but it's since been lost in the void of my formatted harddrive... ;(
+				</p>
+				<h3>Explanation</h3>
+				<p>
+					If you are interested, I'll walk you through it. Essentially, mouse3, mouse4, and mouse5 are all easily accessible buttons on a five-button mouse. Buttons I use for switching items. However, even though the buttons are already used, I customized it by giving each of the buttons two states. 
+				</p>
+				<p>
+					If I hold down a button, it is in "build mode". If I let go of a button, it exits build mode and switches items as usual. So if I enter build mode and left click to activate, it will place a building for me while bypassing all of the build menus. It makes the game a lot quicker, so the benefit is there. I hope you enjoyed my quick blurb about configs!
+				</p>
+
 			</article>
 			<aside>
 				placeholder to add comment thread later.

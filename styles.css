@@ -29,12 +29,14 @@ h4 {
 }
 p {
 	font-size: 20px;
+	line-height: 1.25;
 }
 em {
 }
 strong {
 }
 ul {
+	margin: 0;
 }
 li {
 }
@@ -42,6 +44,7 @@ a {
 	color: orangered;
 	text-shadow: 0 0 0.15em coral;
 	text-decoration-style: double;
+	line-height: 1.25;
 }
 a:visited {
 	color: palevioletred;
@@ -50,6 +53,9 @@ a:hover {
 	color: orange;
 	text-shadow: 0 0 0.25em gold;
 	text-decoration-style: wavy;
+}
+pre {
+	font-family: monospace;
 }
 
 
@@ -127,8 +133,10 @@ header li:first-child {
 header li a {
 	margin: 0;
 }
-
-
+.heading-splitter {
+	display: flex;
+	flex-direction: row;
+}
 
 
     /*══════════════════════════════════════════════*/
@@ -188,10 +196,10 @@ header li {
 .drop-entity {
 	display: none;
 	position: absolute;
-	text-align: center;
+	text-align: left;
 	background-color: white;
 	width: auto;
-	padding: 5px 10px 0px 5px;
+	padding: 10px 10px 5px 10px;
 	box-shadow: 0px 8px 16px 0px;
 	z-index: 1;
 }
@@ -215,5 +223,7 @@ header li {
 }
 
 .logo {
-	margin: 10px 25px 10px 25px;
+	position: relative;
+	display: inline-block;
+	margin: 15px 15px 0 5px;
 }
