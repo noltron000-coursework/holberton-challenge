@@ -1,0 +1,116 @@
+
+/*═══════════════════════════════════════════════════════════════════════════════════════════════*/
+/*These are all for the most basic pre-defined classes, like <a>, <h1>, <p>, <em>, <strong>, etc.*/
+/*═══════════════════════════════════════════════════════════════════════════════════════════════*/
+
+
+
+
+h1 {
+	color: red;
+	font-weight: bold;
+	text-shadow: 0 0 0.2em coral;
+}
+
+h2 {
+	color: red;
+	font-weight:bold;
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+p {
+
+}
+
+em {
+
+}
+
+strong {
+
+}
+
+ul {
+	flex: auto;
+}
+
+li {
+	flex: auto;
+}
+
+
+a {
+	color: orangered;
+	text-shadow: 0 0 0.15em coral;
+	text-decoration-style: double;
+}
+
+a:visited {
+	color: palevioletred;
+}
+
+a:hover {
+	color: orange;
+	text-shadow: 0 0 0.25em gold;
+	text-decoration-style: wavy;
+}
+/*Some of the <a> tags need to be overidden from holberton.css. There's a couple, so I've seperated them here.*/
+
+header a {
+	color: orangered;
+	text-shadow: 0 0 0.15em coral;
+	text-decoration-style: double;
+}
+
+footer a {
+	color: orangered;
+	text-shadow: 0 0 0.15em coral;
+	text-decoration-style: double;
+}
+
+/*These classes are mechanical, and form the essential layout of the page. This includes rows and columns, using Flexbox. With style.*/
+
+body {
+	background-color:#FFE1C3;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	border-bottom: 2px solid #E5E5D8;
+	font-family: 'Josefin Sans', serif;
+	height:300px;
+	padding: 20px 0;
+}
+
+main {
+	background-color:ivory;
+	display: flex;
+	flex: auto;
+	flex-direction: row;
+}
+
+
+article {
+	flex: 2;
+	overflow-y: auto
+}
+
+aside {
+	background-color: ivory;
+	flex: 1;
+	overflow-y: auto
+}
+
+footer {
+	border-top: 2px solid #E5E5D8;
+	height: 100px;
+	padding: 20px -0;
+}
