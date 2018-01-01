@@ -5,6 +5,23 @@
 			Dice Roller
 		</title>
 		<meta charset="UTF-8">
+		<link rel="apple-touch-icon" sizes="57x57" href="../images/favicons/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../images/favicons/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../images/favicons/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../images/favicons/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../images/favicons/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../images/favicons/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../images/favicons/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../images/favicons/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../images/favicons/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="../images/favicons/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../images/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../images/favicons/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../images/favicons/favicon-16x16.png">
+		<link rel="manifest" href="manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="../images/favicons/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
 		<link href="https://www.holbertonschool.com/level2/holberton.css" rel="stylesheet">
 		<link href="../styles.css" rel="stylesheet">
 		<script src="../behavior.js"></script>
@@ -61,15 +78,34 @@
 				</p>
 			</article>
 			<aside>
-				placeholder to add comment thread later.
+				<div id="disqus_thread"></div>
+					<script>
+						/*
+							*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+							*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+						/*
+							var disqus_config = function () {
+								this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+								this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+							};
+						*/
+						(function() { // DON'T EDIT BELOW THIS LINE
+							var d = document, s = d.createElement('script');
+							s.src = 'https://http-213-167-242-216-1.disqus.com/embed.js';
+							s.setAttribute('data-timestamp', +new Date());
+							(d.head || d.body).appendChild(s);
+						})();
+					</script>
+					<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 			</aside>
 		</main>
 
 
 		<footer>
-			<p>
-				Made by <a target="_blank" href="https://twitter.com/noltron000">Nolan Kovacik</a> for <a target="_blank" href="https://www.holbertonschool.com">Holberton School</a>.
-				<br><a target="_blank" href="https://www.holbertonschool.com"><img src="https://www.holbertonschool.com/holberton-logo.png" width=200px></a>
+			<a class="footer-item" target="_blank" href="https://www.holbertonschool.com"><img src="https://www.holbertonschool.com/holberton-logo.png" width=200px></a>
+			<p class="footer-item">
+				Made by <a target="_blank" href="https://twitter.com/noltron000">Nolan Kovacik</a>
+				<br>for <a target="_blank" href="https://www.holbertonschool.com">Holberton School</a>.
 			</p>
 		</footer>
 	</body>
