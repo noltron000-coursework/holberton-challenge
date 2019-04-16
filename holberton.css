@@ -188,15 +188,15 @@ h6 {
 }
 
 @media (max-width: 800px) {
-  body.works_on_smartphone {
-  	display: block;
-  }
-  body.works_on_smartphone main {
-  	display: block;
-  }
-  header .right {
-  	float: none;
-  }
+	body.works_on_smartphone {
+		display: block;
+	}
+	body.works_on_smartphone main {
+		display: block;
+	}
+	header .right {
+		float: none;
+	}
 }
 
 /* image JS challenge */
